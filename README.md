@@ -173,14 +173,32 @@ https://engineeringxpert.com/wp-content/uploads/2022/04/26.png
 
 
 ## STM 32 CUBE PROGRAM :
-
+```
+NAME:G R NANDHAKUMAR
+REG NO:212222100029
+```
+```C
+#include "main.h"
+#include "lcd.h"
+MX_GPIO_Init();
+  Lcd_PortType ports[]={GPIOA,GPIOA,GPIOA,GPIOA};
+  Lcd_PinType pins[]={GPIO_PIN_3,GPIO_PIN_2,GPIO_PIN_1,GPIO_PIN_0};
+  Lcd_HandleTypeDef lcd;
+  lcd = Lcd_create(ports,pins,GPIOB,GPIO_PIN_0,GPIOB,GPIO_PIN_1,LCD_4_BIT_MODE);
+  Lcd_cursor(&lcd,0,0);
+  Lcd_string(&lcd,"DEPT:CSE(CS)");
+  Lcd_cursor(&lcd,1,0);
+  Lcd_string(&lcd,"G R NANDHAKUMAR");
+```
 
 
 
 ## Output screen shots of proteus  :
+![Screenshot (200)](https://github.com/Nandhakumar1313/EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-/assets/120230694/e3bb7d76-e06a-4362-b791-e3b1820885ec)
+
  
  
- ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
+
  
  
 ## Result :
